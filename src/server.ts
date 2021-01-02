@@ -4,7 +4,7 @@ import cors from "cors";
 
 const app = express();
 
-app.use(cors);
+app.use(cors());
 
 app.use(compression());
 
@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 
-const PORT = 5600;
+const PORT = 5400;
 app.listen(
     { port : PORT},
     () => console.log(`hola mundo api graphql http://localhost:${PORT}`)
